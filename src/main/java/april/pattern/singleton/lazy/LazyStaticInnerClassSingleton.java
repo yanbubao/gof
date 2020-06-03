@@ -10,16 +10,17 @@ public class LazyStaticInnerClassSingleton {
 
     private LazyStaticInnerClassSingleton() {
         // 防止反射破坏单例特性
-
+        if (LazyHolder.INSTANCE != null) {
+            throw new RuntimeException("非法创建单例类 LazyStaticInnerClassSingleton！");
+        }
     }
 
-    public static LazyStaticInnerClassSingleton getInstif (LazyHolder.INSTANCE != null) {
-        throw new RuntimeException("非法创建单例类 LazyStaticInnerClassSingleton！");
-    }ance() {
+    public static LazyStaticInnerClassSingleton getInstance() {
         return LazyHolder.INSTANCE;
     }
 
     private static class LazyHolder {
         private static final LazyStaticInnerClassSingleton INSTANCE = new LazyStaticInnerClassSingleton();
     }
+
 }
