@@ -3,6 +3,8 @@ package april.pattern.singleton.test;
 import april.pattern.singleton.lazy.LazyDoubleCheckSingleton;
 import april.pattern.singleton.lazy.LazySimpleSingleton;
 import april.pattern.singleton.lazy.LazyStaticInnerClassSingleton;
+import april.pattern.singleton.register.ContainerSingleton;
+import april.pattern.singleton.threadlocal.ThreadLocalSingleton;
 
 /**
  * @author yanzx
@@ -24,7 +26,9 @@ public class ExecutorThread implements Runnable {
 
         // LazySimpleSingleton instance = LazySimpleSingleton.getInstance();
        // LazyDoubleCheckSingleton instance = LazyDoubleCheckSingleton.getInstance();
-        LazyStaticInnerClassSingleton instance = LazyStaticInnerClassSingleton.getInstance();
+        //LazyStaticInnerClassSingleton instance = LazyStaticInnerClassSingleton.getInstance();
+
+        ThreadLocalSingleton instance = ThreadLocalSingleton.getInstance();
 
         System.out.println(Thread.currentThread().getName() + ":" + instance);
     }
