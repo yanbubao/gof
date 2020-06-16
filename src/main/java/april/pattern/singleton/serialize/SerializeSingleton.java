@@ -6,7 +6,6 @@ import java.io.Serializable;
  * 一个单例类可能会因为序列化、反序列化所破坏！
  *
  * @author yanzx
- * @date 2020/06/04 23:58
  */
 public class SerializeSingleton implements Serializable {
 

@@ -4,7 +4,6 @@ package april.pattern.singleton.lazy;
  * 静态内部类实现懒汉单例
  *
  * @author yanzx
- * @date 2020/06/03 23:47
  */
 public class LazyStaticInnerClassSingleton {
 

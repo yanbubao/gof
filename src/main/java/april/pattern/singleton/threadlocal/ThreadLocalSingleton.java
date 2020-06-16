@@ -5,7 +5,6 @@ package april.pattern.singleton.threadlocal;
  * 保证线程内部全局唯一，且天生线程安全！
  *
  * @author yanzx
- * @date 2020/06/05 00:11
  */
 public class ThreadLocalSingleton {
 

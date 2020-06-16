@@ -4,7 +4,6 @@ package april.pattern.singleton.lazy;
  * 双重检查锁懒汉单例
  *
  * @author yanzx
- * @date 2020/06/03 23:40
  */
 public class LazyDoubleCheckSingleton {
 

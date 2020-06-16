@@ -1,8 +1,10 @@
 package april.pattern.singleton.test;
 
+import lombok.Data;
+
 /**
  * @author yanzx
- * @date 2020/06/04 23:44
  */
+@Data
 public class Pojo {
 }

@@ -6,7 +6,6 @@ package april.pattern.singleton.hungry;
  * 缺点：某些情况（大量的Class）造成内存浪费！
  *
  * @author yanzx
- * @date 2020/06/01 22:30
  */
 public class HungryStaticSingleton {
 

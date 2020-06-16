@@ -2,7 +2,6 @@ package april.pattern.singleton.register;
 
 /**
  * @author: yanzx
- * @date: 2020/06/04 23:47
  */
 public enum EnumSingleton {
 

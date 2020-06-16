@@ -8,7 +8,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * 将每一个实例都缓存到一个容器中，使用唯一标识获取实例！
  *
  * @author yanzx
- * @date 2020/06/04 23:38
  */
 public class ContainerSingleton {
 

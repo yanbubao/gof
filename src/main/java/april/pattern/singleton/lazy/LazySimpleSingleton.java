@@ -6,7 +6,6 @@ package april.pattern.singleton.lazy;
  * 缺点：性能低
  *
  * @author yanzx
- * @date 2020/06/01 22:49
  */
 public class LazySimpleSingleton {
 
