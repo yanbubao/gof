@@ -1,5 +1,6 @@
 package april.pattern.prototype.deep;
 
+import com.alibaba.fastjson.JSON;
 import lombok.Data;
 import lombok.ToString;
 
@@ -58,5 +59,14 @@ public class ConcretePrototype implements Serializable, Cloneable {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * 通过转换为json实现深克隆
+     *
+     * @return
+     */
+    public ConcretePrototype deepCloneByConvertToJson() {
+        return JSON.parseObject(JSON.toJSONString(this), ConcretePrototype.class);
     }
 }

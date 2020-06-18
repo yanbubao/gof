@@ -20,7 +20,7 @@ public class Client {
         prototype.setHobbies(hobbies);
 
         //拷贝原型对象
-        ConcretePrototype cloneType = prototype.deepCloneHobbies();
+        ConcretePrototype cloneType = prototype.deepCloneByConvertToJson();
         cloneType.getHobbies().add("技术控");
 
         System.out.println("原型对象：" + prototype);
