@@ -5,7 +5,6 @@ package april.pattern.singleton.test;
  * Test.
  *
  * @author yanzx
- * @date 2020/06/03 23:53
  */
 public class LazySimpleSingletonTest {
 
