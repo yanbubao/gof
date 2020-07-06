@@ -1,4 +1,4 @@
-package april.pattern.proxy.staticproxy;
+package april.pattern.proxy.general;
 
 import april.pattern.proxy.James;
 
@@ -8,8 +8,7 @@ import april.pattern.proxy.James;
 public class Client {
 
     public static void main(String[] args) {
-
-        MkProxy mkProxy = new MkProxy(new James());
-        mkProxy.makeLove("after insert");
+        MkProxy proxy = new MkProxy(new James());
+        proxy.makeLove("after insert");
     }
 }

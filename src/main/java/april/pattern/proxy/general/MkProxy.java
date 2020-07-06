@@ -1,4 +1,4 @@
-package april.pattern.proxy.staticproxy;
+package april.pattern.proxy.general;
 
 import april.pattern.proxy.Customer;
 import april.pattern.proxy.IPerson;
@@ -22,10 +22,10 @@ public class MkProxy implements IPerson {
     }
 
     private void after() {
-        System.out.println("mk after！");
+        System.out.println("mk after!");
     }
 
     private void before() {
-        System.out.println("mk before！");
+        System.out.println("mk before!");
     }
 }

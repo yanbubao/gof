@@ -1,4 +1,4 @@
-package april.pattern.proxy.staticproxy;
+package april.pattern.proxy;
 
 /**
  * @author yanzx
