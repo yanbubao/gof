@@ -1,6 +1,6 @@
 package april.pattern.factory.abstractfactory.paydemo.factory;
 
-import april.pattern.factory.abstractfactory.paydemo.Payability;
+import april.pattern.factory.abstractfactory.paydemo.PayAbility;
 import april.pattern.factory.abstractfactory.paydemo.impl.AlibabaPay;
 
 /**
@@ -10,12 +10,12 @@ import april.pattern.factory.abstractfactory.paydemo.impl.AlibabaPay;
 public class ChinaPayFactory extends PayFactory {
 
     @Override
-    Payability chinaPay() {
+    PayAbility chinaPay() {
         return new AlibabaPay();
     }
 
     @Override
-    Payability abroadPay() {
+    PayAbility abroadPay() {
         return null;
     }
 

@@ -1,6 +1,6 @@
 package april.pattern.factory.abstractfactory.paydemo.factory;
 
-import april.pattern.factory.abstractfactory.paydemo.Payability;
+import april.pattern.factory.abstractfactory.paydemo.PayAbility;
 
 /**
  * @author: yanzx
@@ -8,8 +8,8 @@ import april.pattern.factory.abstractfactory.paydemo.Payability;
  */
 public abstract class PayFactory {
 
-    abstract Payability chinaPay();
+    abstract PayAbility chinaPay();
 
-    abstract Payability abroadPay();
+    abstract PayAbility abroadPay();
 
 }
