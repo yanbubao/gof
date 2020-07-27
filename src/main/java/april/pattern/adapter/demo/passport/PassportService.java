@@ -25,6 +25,6 @@ public class PassportService {
      * @return
      */
     public ResultMsg login(String username, String password) {
-        return null;
+        return new ResultMsg(200, "登录成功", new Member());
     }
 }
