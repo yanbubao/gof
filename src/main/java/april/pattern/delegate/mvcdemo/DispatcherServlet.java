@@ -36,7 +36,7 @@ public class DispatcherServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             handlerMapping.put("/web/getMemberById.json",
-                    MemberController.class.getMethod("getMemberById", new Class[]{String.class}));
+                    MemberController.class.getMethod("getMemberById", String.class));
         } catch (Exception e) {
             e.printStackTrace();
         }
