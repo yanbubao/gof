@@ -1,0 +1,21 @@
+package april.pattern.structural.adapter.demo.passport.v2.adapters;
+
+import april.pattern.structural.adapter.demo.passport.ResultMsg;
+
+/**
+ * @author yanzx
+ */
+public class LoginForPhoneAdapter extends AbstractAdapter {
+    @Override
+    public boolean support(Object adapter) {
+        return adapter instanceof LoginForPhoneAdapter;
+    }
+
+    @Override
+    public ResultMsg login(String id, Object adapter) {
+        if (!support(adapter)) {
+            return null;
+        }
+        return super.loginForRegister(id, null);
+    }
+}
