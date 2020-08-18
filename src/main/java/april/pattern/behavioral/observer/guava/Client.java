@@ -1,10 +1,13 @@
 package april.pattern.behavioral.observer.guava;
 
 import com.google.common.eventbus.EventBus;
+import com.google.common.eventbus.Subscribe;
 
 /**
  * 基于com.google.guava使用注解实现观察者模式demo
  *
+ * @see EventBus
+ * @see Subscribe
  * @author yanzx
  */
 public class Client {
