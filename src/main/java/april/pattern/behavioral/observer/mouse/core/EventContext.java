@@ -17,8 +17,18 @@ public abstract class EventContext {
     }
 
     public void addListener(String eventType, EventListener target) {
-
+        try {
+            this.addListener(eventType, target,
+                    target.getClass().getMethod("on" + this.toUpperFirstCase(eventType), Event.class));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
+    private String toUpperFirstCase(String eventType) {
+        char[] chars = eventType.toCharArray();
+        chars[0] -= 32;
+        return String.valueOf(chars);
+    }
 }
