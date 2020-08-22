@@ -16,5 +16,9 @@ public abstract class EventContext {
         events.put(eventType, new Event(target, callback));
     }
 
+    public void addListener(String eventType, EventListener target) {
+
+    }
+
 
 }
