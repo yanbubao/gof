@@ -25,6 +25,27 @@ public abstract class EventContext {
         }
     }
 
+    protected void trigger(String eventName) {
+        if (!events.containsKey(eventName)) {
+            return;
+        }
+        trigger(this.events.get(eventName).setEventName(eventName));
+    }
+
+    private void trigger(Event event) {
+        event.setSource(this);
+        event.setTime(System.currentTimeMillis());
+
+        try {
+            if (event.getCallback() != null) {
+                event.getCallback().invoke(event.getTarget(), event);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     private String toUpperFirstCase(String eventType) {
         char[] chars = eventType.toCharArray();
